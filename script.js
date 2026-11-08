@@ -33,7 +33,6 @@ var init = function () {
 
   var width, height;
 
-  // 🔥 DPR + resize FIX
   function resizeCanvas() {
     const dpr = window.devicePixelRatio || 1;
     const rect = canvas.getBoundingClientRect();
@@ -80,7 +79,6 @@ var init = function () {
   var pointsOrigin = [];
   var dr = mobile ? 0.3 : 0.1;
 
-  // 💙 масштаб сердца под мобилу
   var scale = mobile ? 180 : 310;
   var scaleY = mobile ? 11 : 19;
 
@@ -120,7 +118,7 @@ var init = function () {
       q: ~~(rand() * heartPointsCount),
       D: 2 * (i % 2) - 1,
       force: 0.2 * rand() + 0.7,
-      f: "rgb(255, 20, 147)",
+      f: "rgb(18, 247, 6)", //fill
       trace: Array.from({ length: traceCount }, () => ({ x, y })),
     };
   }
